@@ -42,7 +42,8 @@ export const signup = async (req, res) => {
         }
     }catch(error){
         console.log("Error in signup controller",error.message);
-        res.status(500).send("Server Error");
+        res.status(500).json({ error: "SERVER ERROR" });
+
     }
 };
 export const login = async (req, res) => {
@@ -62,7 +63,8 @@ export const login = async (req, res) => {
         });
     }catch(error){
         console.log("Error in signup controller",error.message);
-        res.status(500).send("Server Error");
+        res.status(500).json({ error: "SERVER ERROR" });
+
     }
 };
 export const logout =
