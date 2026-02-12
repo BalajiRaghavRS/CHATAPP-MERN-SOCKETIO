@@ -2,7 +2,7 @@ import React from 'react'
 import SearchInput from "./SearchInput"
 import Conversation from './Conversation'
 import Conversations from './Conversations'
-import LogoutButton from './Logoutbutton'
+import LogoutButton from './LogoutButton.jsx'
 const Sidebar = () => {
   return (
     <div className='border-r border-slate-500 p-4 flex flex-col'>
