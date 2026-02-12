@@ -23,7 +23,7 @@ app.use("/api/users",userRoutes)
 //     res.send("Hello from the hey hey!");
 // })
 app.use(express.static(path.join(__dirname,"/frontend/dist")))
-app.use((req,res)=>{
+app.get("*",(req,res)=>{
     res.sendFile(path.join(__dirname,"frontend","dist","index.html"))
 })
 
